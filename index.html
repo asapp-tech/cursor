@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Session - Add & Edit User</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="main-container">
+        <header class="top-bar">
+            <div class="logo-area">
+                <i class="fas fa-crown gold-icon"></i>
+                <span class="admin-text">ADMIN SESSION</span>
+            </div>
+            <button class="return-btn">Return</button>
+        </header>
+
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Add & Edit User</h2>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="userForm">
+                    <!-- Basic Info Section -->
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label>User ID *</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label>First Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label>Last Name *</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label>Email ID *</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile No</label>
+                            <input type="tel">
+                        </div>
+                        <div class="form-group">
+                            <label>Localisation</label>
+                            <select>
+                                <option value=""></option>
+                                <option value="paris">Paris</option>
+                                <option value="ny">New York</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label>Password*</label>
+                            <input type="password">
+                        </div>
+                        <div class="form-group">
+                            <label>Teams link</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Linkedin link</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label>Confirm Password*</label>
+                            <input type="password">
+                        </div>
+                        <div class="form-group">
+                            <label>Internal directory link</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Presentation text</label>
+                            <input type="text" placeholder="................................................................................................................................................">
+                        </div>
+                    </div>
+
+                    <!-- Module Permission -->
+                    <div class="module-permission">
+                        <span>Module Permission</span>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Admin</label>
+                            <label><input type="checkbox"> User</label>
+                            <label><input type="checkbox"> HR validation</label>
+                        </div>
+                    </div>
+
+                    <!-- Skills Matrix -->
+                    <div class="skills-section">
+                        <!-- Web Development -->
+                        <div class="skill-category-row">
+                            <div class="category-header">
+                                <h3>DEVELOPPEMENT WEB</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>HTML/CSS</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>JavaScript</span>
+                                    </div>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Java</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>C++</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Python_back-end</span>
+                                    </div>
+                                    <span class="skill-level">Intermediary</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI -->
+                        <div class="skill-category-row">
+                            <div class="category-header">
+                                <h3>INTELLIGENCE<br>ARTIFICIELLE</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star grey"></i><i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Python_IA</span>
+                                    </div>
+                                    <span class="skill-level">Intermediary</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>AWS SageMaker</span>
+                                    </div>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Keras</span>
+                                    </div>
+                                    <span class="skill-level">Intermediary</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>TensorFlow_Google</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Azur Machine Learning</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Data Vis -->
+                         <div class="skill-category-row">
+                            <div class="category-header">
+                                <h3>DATA VISUALISATION</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>PowerBI</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Tableau</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Qlick</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Google Analytics</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Matplotlib Python</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agile -->
+                        <div class="skill-category-row">
+                            <div class="category-header">
+                                <h3>OUTILS AGILES /<br>METHODOLOGIE</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Jira</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Trello</span>
+                                    </div>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Asana</span>
+                                    </div>
+                                    <span class="skill-level">Intermediary</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Wrike</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>Excel</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages -->
+                        <div class="skill-category-row">
+                            <div class="category-header">
+                                <h3>LANGAGES DE<br>PROGRAMMATION ...</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>SQL</span>
+                                    </div>
+                                    <span class="skill-level">Confirm</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>VBA</span>
+                                    </div>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" checked> <span>Python</span>
+                                    </div>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>R</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox"> <span>JavaScript</span>
+                                    </div>
+                                    <span class="skill-level">N.A</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Section -->
+                    <div class="form-footer">
+                        <div class="availability-section">
+                            <span class="avail-label">DISPONIBILITE</span>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="availability" value="disponible" checked>
+                                    <span class="dot"></span>
+                                    Disponible
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="availability" value="occupe">
+                                    <span class="dot"></span>
+                                    Occupé(e)
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="availability" value="absent">
+                                    <span class="dot"></span>
+                                    Absent(e)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button type="button" class="btn-save">Save</button>
+                            <button type="button" class="btn-cancel">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="bottom-legal">
+                <span><i class="fas fa-cookie"></i> Cookie Policy</span>
+                <span><i class="fas fa-shield-alt"></i> Privacy Policy</span>
+                <p>Copyright © 2022 Emanuele Tocci, Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
